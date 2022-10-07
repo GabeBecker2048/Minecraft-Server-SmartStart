@@ -5,7 +5,7 @@
 set MIN_RAM=1G	
 
 :: minimum amount of RAM given to the server
-set MAX_RAM=16G
+set MAX_RAM=1G
 
 :: the name of the server file
 set SERVER_FILENAME=server.jar
