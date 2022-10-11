@@ -15,7 +15,7 @@ Simple and easy to use!
    
 2) Create a new folder inside your server folder named "backups" (without the quotes)
 
-3) Download the script files (start.bat, start_options.bat, and backup.bat)
+3) Download the script files (start.bat, start_options.bat, backup.bat, and install_backup.bat)
    and add them to the folder where you keep your server files
 
 4) Right click on "start_options.bat" and click "Edit" 
