@@ -12,15 +12,15 @@ for /d %%G in (world_backup_*-*-*) do (
 	
 	set iyear_str=!i:~13,2!
 	if "!iyear_str:~0,1!"=="0" set iyear_str=!iyear_str:~1,1!
-	set /a iyear=iyear_str
+	set /a iyear=!iyear_str!
 	
 	set imonth_str=!i:~16,2!
 	if "!imonth_str:~0,1!"=="0" set imonth_str=!imonth_str:~1,1!
-	set /a imonth=imonth_str
+	set /a imonth=!imonth_str!
 		
 	set iday_str=!i:~19,2!
 	if "!iday_str:~0,1!"=="0" set iday_str=!iday_str:~1,1!
-	set /a iday=iday_str
+	set /a iday=!iday_str!
 	
 	
 	call :strLen !i!
