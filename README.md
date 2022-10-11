@@ -1,5 +1,5 @@
 # Minecraft-Server-SmartStart
-A simple windows batch script to automatically backup a Minecraft server on startup
+A simple windows batch script to automatically backup a Minecraft server on startup or shutdown
 ### No Plugins Required
 
 Works with any server, vanilla, bukkit, or forge. 
@@ -26,6 +26,7 @@ Simple and easy to use!
    - MAX_RAM=1G
    - SERVER_FILENAME=server.jar
    - BACKUP_ON_START=ON
+   - BACKUP_ON_SHUTDOWN=OFF
    - MAX_BACKUPS=3
    - OVERRIDE_TODAYS_BACKUP=OFF
    - NUMBER_DAILY_BACKUPS=ON
@@ -62,6 +63,12 @@ Toggle for backing up the server on start up.
 This should always be either ON or OFF. 
 If ON the server will create a backup in the backups folder when starting the server. 
 If OFF the server will not create a backup on start up
+
+#### BACKUP_ON_SHUTDOWN (Default OFF)
+Toggle for backing up the server on shut down. 
+This should always be either ON or OFF. 
+If ON the server will create a backup in the backups folder when shuting down the server. 
+If OFF the server will not create a backup on shut down
 
 #### MAX_BACKUPS (Default 3)
 The maximum number of backups allowed before the oldest backups are deleted. 
