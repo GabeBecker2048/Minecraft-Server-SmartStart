@@ -39,7 +39,7 @@ if not !len! equ 2 set year=0!year!
 call :strLen !month!
 if not !len! equ 2 set month=0!month!
 call :strLen !day!
-if not !day! equ 2 set day=0!day!
+if not !len! equ 2 set day=0!day!
 if !num! equ 0 (set newest_backup=world_backup_!year!-!month!-!day!) else (set newest_backup=world_backup_!year!-!month!-!day!-!num!)
 
 :: warning
