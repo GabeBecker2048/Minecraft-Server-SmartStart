@@ -1,17 +1,23 @@
-@echo off
+
 :: 					Start settings
 
 :: maximum amount of RAM given to the server
 set MIN_RAM=1G	
 
 :: minimum amount of RAM given to the server
-set MAX_RAM=1G
+set MAX_RAM=16G
 
 :: the name of the server file
 set SERVER_FILENAME=server.jar
 
 :: if ON creates a backup of the server before startup
-set BACKUP_ON_START=ON		
+set BACKUP_ON_START=ON	
+
+:: if ON creates a backup of the server on shutdown
+set BACKUP_ON_SHUTDOWN=OFF	
+
+:: NOT WORKING RIGHT NOW
+set NOGUI=ON
 
 :: 					Backup settings
 
